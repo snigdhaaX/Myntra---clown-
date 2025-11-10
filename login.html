@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Myntra</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f3, #ffe8e9);
+      height: 100vh;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    header img {
+      height: 45px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      font-weight: 600;
+      color: #2e2e2e;
+      font-size: 14px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .right-icons input {
+      padding: 8px 12px;
+      width: 260px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    /* Centered login box */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+    }
+
+    .login-box {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 380px;
+      padding: 30px 40px;
+      text-align: left;
+    }
+
+    .login-box h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .input-container {
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .input-container span {
+      background-color: #f5f5f5;
+      padding: 10px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .input-container input {
+      border: none;
+      outline: none;
+      flex: 1;
+      padding: 10px;
+      font-size: 14px;
+    }
+    
+    .continue-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff3f6c;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .continue-btn:hover {
+      background-color: #e0345b;
+    }
+
+    .help {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .help a {
+      color: #ff3f6c;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="myntra-logo.png" alt="Myntra Logo" href = "WebPage.html">
+    <nav>
+      <a href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">KIDS</a>
+      <a href="#">HOME LIVING</a>
+      <a href="#">STUDIO</a>
+    </nav>
+    <div class="right-icons">
+      <input type="text" placeholder="Search for products, brands and more">
+      <span>Wishlist</span>
+      <span>Bag</span>
+    </div>
+  </header>
+
+  <div class="login-container">
+    <div class="login-box">
+      <img src="banner.png" alt="Offer Banner" style="width:100%; border-radius:3px; margin-bottom:15px;">
+      <h2>Login or Signup</h2>
+      <div class="input-container">
+        <span>+91</span>
+        <input type="text" placeholder="Mobile Number">
+      </div>
+
+     <button class="continue-btn">CONTINUE</button>
+
+      <div class="help">
+        Have trouble logging in? <a href="#">Get help</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
